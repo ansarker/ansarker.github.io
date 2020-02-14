@@ -4,6 +4,7 @@ import '../styles/Sidebar.css';
 import '../styles/styles.css';
 import Image from '../img/iansarker.jpg';
 import Menu from './Menu';
+import Navbar from './Navbar';
 
 
 export default class Sidebar extends Component {
@@ -11,6 +12,7 @@ export default class Sidebar extends Component {
         const info = this.props.info;
         return(
             <div className="sidebar">
+                <Navbar />
                 <div className="image-section">
                     <img className="figure" src={Image} alt="image"/>
                 </div>

@@ -1,0 +1,61 @@
+.navbar {
+    position: fixed;
+    top: 5px;
+    left: 5px;
+}
+
+.scene {
+    width: 70px;
+    height: 70px;
+    text-align: center;
+    color: #fcda05; /* yellow */
+    font-size: 18px;
+    box-sizing: border-box;
+    line-height: 70px;
+}
+
+.front > svg > path {
+    color: #fcda05;
+    fill: #fcda05;
+}
+
+.box {
+    width: 100%;
+    height: 100%;
+    /* make sure it looks like a cube */
+    transform-style: preserve-3d;
+    transition: all 0.5s ease-out;
+    /* 0 0 determines that the transformation will start
+    from the top left */
+    transform-origin: 0 0;
+}
+
+.scene:hover .box {
+    transform: rotateY(-90deg);
+    cursor: pointer;
+    color: #000000; /* black */
+}
+
+.face {
+    /* ABSOLUTE so all sides are on top of each other */
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    transform-origin: 0 0;
+}
+
+.front {
+    transform: rotateY(0deg);
+    background-color: #393e46;
+}
+
+.right {
+    transform: rotateY(90deg);
+    /* left is necessary to animate it like a cube */
+    left: 70px;
+    background-color: #fcda05; /* yellow */
+    font-size: 0.8rem;
+    vertical-align: middle;
+    line-height: 70px;
+    font-family: 'Courier New', Courier, monospace;
+}
