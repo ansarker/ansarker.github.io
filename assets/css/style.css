@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Tilt+Neon&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
+
+:root {
+    --background: #f5f5f5;
+    --text: #3d4449;
+    --border: #03a89e;
+}
+
+.bg {
+    background-color: var(--background);
+}
+
+.text {
+    color: var(--text);
+}
+
+.text-teal_ {
+    color: var(--border);
+}
+
+.text-heading {
+    color: var(--text);
+    font-weight: 600;
+    font-size: 1.5rem;
+    letter-spacing: 0.1rem;
+    margin-bottom: 2.14rem;
+    padding-bottom: 0.3rem;
+    border-bottom: 3px solid rgba(244, 63, 94, 1);
+    display: inline-block;
+}
+
+.text-subheading {
+    color: var(--text);
+    font-weight: 600;
+    font-size: 1.25rem;
+    letter-spacing: 0.1rem;
+    margin-bottom: 0.3rem;
+    display: inline-block;
+}
+
+.social a:not(:last-child)::after {
+    content: "/";
+    padding: 0 4px;
+}
+
+.bg-nav {
+    background-color: var(--text);
+}
+
+.publications {
+    list-style-type: none;
+    padding: 0;
+}
+
+.publication {
+    margin: 10px 0;
+}
+
+.section {
+    margin-bottom: 1.3rem;
+}
+
+.font-neon {
+    font-family: 'Tilt Neon', sans-serif;
+    line-height: 30px;
+}
+
+.font-lato {
+    font-family: 'Lato', sans-serif;
+    line-height: 30px;
+}
+
+/* Tree Shape */
+.gallery {
+    border: solid 1px #eeeeee;
+    padding: 0.5vw;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-auto-rows: auto;
+    grid-gap: 0.2vw;
+}
+
+.gallery-item {
+    background-size: cover;
+    background-position: center;
+    padding: 0vw;
+    font-size: 0.8em;
+    box-sizing: border-box;
+}
+
+.gallery-item:hover {
+    cursor: pointer;
+    transition: cubic-bezier(0.95, 0.05, 0.795, 0.035);
+}
+
+.gallery-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
