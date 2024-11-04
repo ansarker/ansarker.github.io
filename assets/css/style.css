@@ -20,10 +20,6 @@
     color: var(--border);
 }
 
-body {
-    margin: 0;
-    padding: 0;
-}
 
 .avatar-wrapper {
     width: 180px;
@@ -149,3 +145,52 @@ body {
     height: 100%;
     object-fit: cover;
 }
+
+.profile-photo {
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+    margin-bottom: 1rem;
+  }
+
+  /* Social icons container */
+  .social-icons {
+    margin: 1rem 0;
+  }
+
+  .social-icons a {
+    margin: 0 0.5rem;
+    color: #333;
+    font-size: 1.5rem;
+    transition: color 0.3s ease;
+  }
+
+  .ui.divider {
+    margin: 2rem 0;
+  }
+
+  .social-icons a:hover {
+    color: #4183C4;
+  }
+
+  /* Bio Section */
+  .bio {
+    max-width: 800px;
+    font-size: 1.2rem;
+    line-height: 1.5;
+    color: #555;
+  }
+
+  /* Media Queries for responsiveness */
+  @media (min-width: 768px) {
+    .profile-container {
+      margin-right: 3rem;
+      text-align: center;
+    }
+
+    .profile-photo {
+      width: 160px;
+      height: 160px;
+    }
+  }
