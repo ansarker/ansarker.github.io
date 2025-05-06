@@ -6,200 +6,169 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Anis Sarker</title>
   <link rel="favicon icon" href="./assets/favicon.jpg" type="image/x-icon">
-  <script src="https://cdn.jsdelivr.net/npm/fomantic-ui@2.9.3/dist/semantic.min.js"></script>
-  <link href="https://cdn.jsdelivr.net/npm/fomantic-ui@2.9.3/dist/semantic.min.css" rel="stylesheet">
-  <link rel="stylesheet" href="/assets/css/style.css">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            sand: '#FDF6E3',
+            dusk: '#4B4453',
+            mystic: '#8B5CF6',
+          },
+          fontFamily: {
+            sufispirit: ['"Cormorant Garamond"', 'serif']
+          }
+        }
+      }
+    }
+  </script>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600&display=swap" rel="stylesheet">
 </head>
 
-<body>
-  <div class="ui text container" style="margin-bottom: 2rem;">
-    <div class="ui menu">
-      <a href="/" class="header item">Home</a>
-      <!-- <a href="#" class="item">Publications</a> -->
-      <a href="/research.html" class="item">Research</a>
-      <a href="https://drive.google.com/file/d/11JmoxnLGOqidNZG969Xk6zDaPAxh1gr-/view?usp=sharing"
-        class="item">Resume</a>
-    </div>
-  </div>
+<body class="bg-sand text-dusk font-sufispirit">
 
-  <div class="ui text container">
-    <!-- Profile Photo and Social Icons -->
-    <div class="profile-container">
-      <img src="./images/avatar.png" width="120px" alt="Your Photo" class="profile-photo">
-      <div class="social-icons">
-        <a href="mailto:anissarker603@gmail.com"><i class="mail icon"></i></a>
-        <a href="https://www.linkedin.com/in/iansarker/" target="_blank"><i class="linkedin icon"></i></a>
-        <a href="https://github.com/ansarker" target="_blank"><i class="github icon"></i></a>
-        <a href="https://scholar.google.com/citations?user=UePcz9EAAAAJ&hl=en"><i class="user graduate icon"></i></a>
-        <a href="https://drive.google.com/file/d/11JmoxnLGOqidNZG969Xk6zDaPAxh1gr-/view?usp=sharing" target="_blank"><i
-            class="file alternate icon"></i></a>
-      </div>
-    </div>
+  <!-- Top centered nav -->
+  <header class="py-6">
+    <nav class="flex justify-center space-x-6 text-lg">
+      <a href="/" class="hover:text-mystic transition flex items-center space-x-1">
+        <img src="assets/svg/banyan_rev.svg" alt="Home icon" class="w-5 h-5 bg-dusk" />
+        <span>Home</span>
+      </a>
+      <a href="#publication" class="hover:text-mystic transition">Publications</a>
+      <a href="https://drive.google.com/file/d/1F_yXK1bgqK40SnEfpbUu8kJ3gi3G4vBR/view?usp=sharing">CV</a>
+    </nav>
+  </header>
 
-    <!-- Bio Section -->
-    <div class="bio">
-      <p>I am a machine learning engineer, researcher.</p>
-      <p>Right now, working as a machine learning engineer at <a href="https://www.bistasolutions.com/"
-          target="_blank">Bista Solutions Inc. </a> with LLM.
-        Previously, I have worked for <span class="link">AinoviQ</span> a R&D based organization. Here I
-        worked for apparel industry creating products using machine learning, computer vision, and
-        generative ai. Before that I worked on
-        <a href="https://ccds.ai/" target="_blank" rel="noopener noreferrer">Center for Computational
-          and Data Sciences</a>
-        as a research assistant. At CCDS I've worked on deep learning, machine learning, image
-        processing solving statistical
-        geoscience projects like Land Use/Land Cover, Building categorization, Urbanization, Time-series
-        analysis etc.
-      </p>
-    </div>
-    <span class="content"><strong>Email: </strong> <a href="mailto:anissarker603@gmail.com">anissarker603@gmail.com</a>
-    </span>
+  <section class="max-w-4xl mx-auto mt-16 px-4">
+    <h2 class="text-4xl font-bold text-dusk mb-4 pb-2">Anis Sarker</h2>
 
-    <!-- Research Interests -->
-    <h2 class="ui header">Research Interests</h2>
-    <div class="ui bulleted list">
-      <div class="item">Machine Learning, Deep Learning, Computer Vision, and GIS</div>
-      <div class="item">Environmental Monitoring, LULC, Urban Planning, and Remote Sensing</div>
-      <div class="item">LiDAR, Synthetic Aperture Radar (SAR), and GeoAI applications</div>
-    </div>
+    <p class="text-lg text-dusk/90 leading-relaxed mb-6">
+      I am a machine learning engineer and applied AI researcher with hands-on experience building end-to-end systems
+      across computer vision, deep learning, and geospatial intelligence.
+      My work spans a range of real-world projects, including virtual try-on systems for fashion and cosmetics,
+      AI-driven ERP assistants, and urban land use classification using satellite imagery. I specialize in deep
+      learning, MLOps, and human-centric applications of computer vision. With a strong foundation in both research and
+      engineering, I focus on creating scalable, impactful AI solutions grounded in thoughtful design and technical
+      rigor.
+    </p>
+    <p class="text-lg text-dusk/90 leading-relaxed">
+      <strong>Research interests:</strong> Machine Learning, Deep Learning, Computer Vision, GIS, and Remote Sensing
+    </p>
+  </section>
 
-    <!-- Education -->
-    <h2 class="ui header">Education</h2>
-    <div class="ui relaxed divided list">
-      <div class="item">
-        <div class="content">
-          <h4 class="header">Bachelor of Science in Computer Science</h4>
-          <div class="description">
-            Independent University, Bangladesh<br>
-            2015 - 2019<br>
-            <strong>Thesis:</strong> Land Use and Land Cover Segmentation Using Deep Neural Network
-          </div>
-        </div>
-      </div>
-    </div>
+  <section class="max-w-4xl mx-auto mt-16 px-4">
+    <h2 class="text-3xl font-semibold text-mystic mb-4 border-b border-dusk/20 pb-2">Get in touch</h2>
 
-    <!-- Professional Experience -->
-    <h2 class="ui header">Professional Experience</h2>
-    <div class="ui relaxed list">
-      <div class="item">
-        <div class="content">
-          <h4 class="header">Machine Learning Engineer</h4>
-          <div class="description">
-            Bista Solutions Inc.; BD<br>
-            June 2024 - Present<br>
-          </div>
-        </div>
+    <p class="text-lg text-dusk/90 leading-relaxed mb-6">Feel free to reach out at <a
+        href="mailto:anissarker603@gmail.com" class="text-mystic hover:underline">anissarker603@gmail.com</a> for
+      collaborations, research discussions, or
+      just to connect.
+    </p>
+    <div class="text-center">
+      <a class="text-dusk hover:text-dusk/80 hover:underline px-2 py-1" href="https://www.linkedin.com/in/iansarker/" target="_blank"><i class="linkedin icon"></i>LinkedIn</a> &#9826;
+      <a class="text-dusk hover:text-dusk/80 hover:underline px-2 py-1" href="https://github.com/ansarker" target="_blank"><i class="github icon"></i>Github</a> &#9826;
+      <a class="text-dusk hover:text-dusk/80 hover:underline px-2 py-1" href="https://scholar.google.com/citations?user=UePcz9EAAAAJ&hl=en"><i class="user graduate icon"></i>Google Scholar</a> &#9826;
+      <a class="text-dusk hover:text-dusk/80 hover:underline px-2 py-1" href="https://drive.google.com/file/d/1F_yXK1bgqK40SnEfpbUu8kJ3gi3G4vBR/view?usp=sharing" target="_blank"><i
+          class="file alternate icon"></i>CV</a>
+    </div>
+  </section>
+
+  <section class="max-w-4xl mx-auto mt-16 px-4">
+    <h2 class="text-3xl font-semibold text-mystic mb-4 border-b border-dusk/20 pb-2">Projects involvement</h2>
+
+    <div class="space-y-6">
+      <div class="border-l-4 border-mystic pl-4">
+        <h3 class="text-2xl text-mystic font-semibold">Odoo Copilot: Natural Language-Driven ERP Analytics</h3>
+        <p class="text-lg text-dusk/90 leading-relaxed">
+          Contributed to the development of an AI assistant for ERP systems by designing a natural language interface
+          for querying business data. Applied LLMs and internal orchestration frameworks to bridge user intent with ERP
+          logic. Created custom data visualizations to improve data comprehension for stakeholders, boosting reporting
+          efficiency.
+        </p>
       </div>
-      <div class="item">
-        <div class="content">
-          <h4 class="header">Artificial Intelligence Engineer</h4>
-          <div class="description">
-            AinoviQ It Ltd.; BD<br>
-            February 2022 - May 2023<br>
-          </div>
-        </div>
+
+      <div class="border-l-4 border-mystic pl-4">
+        <h3 class="text-2xl text-mystic font-semibold">DropDead Gorgeous: Virtual Makeup Room</h3>
+        <p class="text-lg text-dusk/90 leading-relaxed">
+          Led the development of a real-time virtual makeup application using facial landmark detection and computer
+          vision. Focused on applying dynamic effects like lipstick and blush with high visual fidelity, ensuring a
+          fluid and interactive user experience.
+        </p>
       </div>
-      <div class="item">
-        <div class="content">
-          <h4 class="header">Research Assistant</h4>
-          <div class="description">
-            Center for Computational & Data Sciences; BD<br>
-            May 2019 - December 2021<br>
-          </div>
-        </div>
+
+      <div class="border-l-4 border-mystic pl-4">
+        <h3 class="text-2xl text-mystic font-semibold">Virtual Try-On for Clothes</h3>
+        <p class="text-lg text-dusk/90 leading-relaxed">
+          Engineered a virtual try-on system enabling users to visualize clothing on their body in real-time. Utilized
+          pose estimation and body segmentation to align garments naturally with user movements and body shapes. Focused
+          on ensuring accurate garment overlay, smooth transitions, and visual realism across diverse poses. Improved
+          user engagement and interactivity through responsive and lightweight implementation.
+        </p>
       </div>
-      <div class="item">
-        <div class="content">
-          <h4 class="header">Software Engineer (Intern)</h4>
-          <div class="description">
-            TechDojo; BD<br>
-            October 2019 - March 2020<br>
-          </div>
-        </div>
+
+
+      <div class="border-l-4 border-mystic pl-4">
+        <h3 class="text-2xl text-mystic font-semibold">Urban Categorization with Deep Learning</h3>
+        <p class="text-lg text-dusk/90 leading-relaxed">
+          Designed and trained semantic segmentation models for satellite imagery to classify urban land use in Dhaka.
+          Managed data pipeline preparation, annotation, and preprocessing. Collaborated with international partners to
+          ensure geographic and model generalizability.
+        </p>
       </div>
     </div>
+  </section>
 
-    <!-- Publications -->
-    <h2 class="ui header">Publications</h2>
-    <div class="ui relaxed divided list">
-      <div class="item">
-        <i class="large file alternate outline icon"></i>
-        <div class="content">
-          <a class="header" href="https://doi.org/10.48550/arXiv.2406.05912">BD-SAT: High-resolution Land Use Land Cover
-            Dataset & Benchmark Results
-            for Developing Division: Dhaka, BD. (2024)</a>
-          <div class="description">
-            <div>
-              Paul Ovi, Bakar Siddik Nayem Abu, Sarker Anis, Ali Amin Ahsan, Ashraful Amin M,
-              Mahbubur
-              Rahman AKM
-            </div>
-          </div>
-        </div>
+  <section id="publication" class="max-w-4xl mx-auto mt-16 px-4">
+    <h2 class="text-3xl font-semibold text-mystic mb-4 border-b border-dusk/20 pb-2">Publications</h2>
+
+    <div class="space-y-6">
+      <div class="border-l-4 border-mystic pl-4">
+        <p class="text-sm text-dusk/60">2024</p>
+        <a href="https://doi.org/10.48550/arXiv.2406.05912"
+          class="text-xl font-medium hover:text-mystic transition">BD-SAT: High-resolution Land Use Land Cover
+          Dataset & Benchmark Results for Developing Division: Dhaka, BD</a>
       </div>
-      <div class="item">
-        <i class="large file alternate outline icon"></i>
-        <div class="content">
-          <a class="header" href="https://doi.org/10.3390/s21227469">Applying State-of-the-Art Deep-Learning Methods to
-            Classify Urban Cities
-            of the Developing World. (2021)</a>
-          <div class="description">
-            <div>
-              AKM M. Rahman, M. Zaber, Q. Cheng, A. B. S. Nayem, A. Sarker, O. Paul, and R.
-              Shibasaki
-            </div>
-          </div>
-        </div>
+
+      <div class="border-l-4 border-mystic pl-4">
+        <p class="text-sm text-dusk/60">2021</p>
+        <a href="https://doi.org/10.3390/s21227469" class="text-xl font-medium hover:text-mystic transition">Applying
+          State-of-the-Art Deep-Learning Methods to
+          Classify Urban Cities of the Developing World</a>
       </div>
-      <div class="item">
-        <i class="large file alternate outline icon"></i>
-        <div class="content">
-          <a class="header" href="https://doi.org/10.48550/arXiv.2011.12847">Deep-learning Coupled with Novel
-            Classification Method to Classify the
-            Urban Environment of the Developing World. (2020)</a>
-          <div class="description">
-            <div>
-              Q. Cheng, AKM M. Rahman, A. Sarker, A. B. S. Nayem, O. Paul, A. A. Ali, M A. Amin,
-              R. Shibasaki, and M. Zaber
-            </div>
-          </div>
-        </div>
+
+      <div class="border-l-4 border-mystic pl-4">
+        <p class="text-sm text-dusk/60">2021</p>
+        <a href="https://doi.org/10.48550/arXiv.2011.12847" class="text-xl font-medium hover:text-mystic transition">A
+          Novel Disaster Image Dataset and Characteristics Analysis using Attention Model</a>
       </div>
-      <div class="item">
-        <i class="large file alternate outline icon"></i>
-        <div class="content">
-          <a class="header" href="https://doi.org/10.48550/arXiv.2107.01284">A Novel Disaster Image Data-set and
-            Characteristics Analysis using
-            Attention Model. (2020)</a>
-          <div class="description">
-            <div>
-              F. F. Niloy, Arif, A. B. S. Nayem, A. Sarker, O. Paul, M A. Amin, A. A. Ali, M.
-              Zaber, and AKM M. Rahman
-            </div>
-          </div>
-        </div>
+
+      <div class="border-l-4 border-mystic pl-4">
+        <p class="text-sm text-dusk/60">2021</p>
+        <a href="https://doi.org/10.48550/arXiv.2107.01284"
+          class="text-xl font-medium hover:text-mystic transition">Deep-learning Coupled with Novel Classification
+          Method to Classify the Urban Environment of the Developing World</a>
       </div>
-      <div class="item">
-        <i class="large file alternate outline icon"></i>
-        <div class="content">
-          <a class="header" href="https://doi.org/10.48550/arXiv.2008.10736">LULC Segmentation of RGB Satellite Image
-            Using FCN-8 (2019)</a>
-          <div class="description">
-            <div>
-              A.B.S Nayem, A Sarker, O Paul, A.A Ali, M.A Amin, A.K.M M Rahman
-            </div>
-          </div>
-        </div>
+
+      <div class="border-l-4 border-mystic pl-4">
+        <p class="text-sm text-dusk/60">2020</p>
+        <a href="https://doi.org/10.48550/arXiv.2008.10736"
+          class="text-xl font-medium hover:text-mystic transition">LULC Segmentation of RGB Satellite Image Using
+          FCN-8</a>
       </div>
     </div>
 
-    <!-- Footer -->
-    <div class="ui divider"></div>
-    <footer class="ui center aligned">
-      <p>&copy; 2024 Anis Sarker - All Rights Reserved</p>
-    </footer>
-    <div class="ui hidden divider header"></div>
-  </div>
+    <div class="mt-8 text-right">
+      <a href="https://scholar.google.com/citations?user=UePcz9EAAAAJ&hl=en"
+        class="text-mystic hover:underline text-lg">→ See all publications</a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="text-center text-sm text-dusk/60 pb-8 mt-6">
+    Copyright &copy; 2019-2025 Anis Sarker.
+  </footer>
+
 </body>
 
 </html>
