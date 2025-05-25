@@ -12,38 +12,47 @@
       theme: {
         extend: {
           colors: {
-            sand: '#FDF6E3',
-            dusk: '#4B4453',
-            mystic: '#8B5CF6',
+            light_gray: '#fdfdfd',
+            deep_navy: '#14213d',
+            clay: '#cb997e',
+            link: '#0a2472'
           },
           fontFamily: {
-            sufispirit: ['"Cormorant Garamond"', 'serif']
+            sufispirit: ['"Cormorant Garamond"', 'serif'],
+            noto: ['"Noto Serif"', 'serif']
           }
         }
       }
     }
   </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
 </head>
 
-<body class="bg-sand text-dusk font-sufispirit">
+<body class="bg-light_gray text-deep_navy font-noto">
 
   <!-- Top centered nav -->
   <header class="py-6">
-    <nav class="flex justify-center space-x-6 text-lg">
-      <a href="/" class="hover:text-mystic transition flex items-center space-x-1">
-        <img src="assets/svg/banyan_rev.svg" alt="Home icon" class="w-5 h-5 bg-dusk" />
+    <nav class="flex justify-center space-x-6 text-md">
+      <a href="/" class="hover:text-clay transition flex items-center space-x-1">
+        <img src="assets/svg/banyan_rev.svg" alt="Home icon" class="w-5 h-5 bg-deep_navy" />
         <span>Home</span>
       </a>
-      <a href="#publication" class="hover:text-mystic transition">Publications</a>
+      <a href="#publication" class="hover:text-clay transition">Publications</a>
       <a href="https://drive.google.com/file/d/1F_yXK1bgqK40SnEfpbUu8kJ3gi3G4vBR/view?usp=sharing">CV</a>
     </nav>
   </header>
 
   <section class="max-w-4xl mx-auto mt-16 px-4">
-    <h2 class="text-4xl font-bold text-dusk mb-4 pb-2">Anis Sarker</h2>
+    <div class="mx-auto w-40 h-auto mb-4 rounded overflow-hidden shadow-md">
+      <img class="w-full h-full" alt="portrait 2020" src="assets/portrait/portrait_2020.jpg"/>
+    </div>
+    <h2 class="text-4xl font-bold text-deep_navy mb-4 pb-2">Anis Sarker</h2>
 
-    <p class="text-lg text-dusk/90 leading-relaxed mb-6">
+    <p class="text-md text-deep_navy/90 leading-relaxed mb-6">
       I am a machine learning engineer and applied AI researcher with hands-on experience building end-to-end systems
       across computer vision, deep learning, and geospatial intelligence.
       My work spans a range of real-world projects, including virtual try-on systems for fashion and cosmetics,
@@ -52,35 +61,40 @@
       engineering, I focus on creating scalable, impactful AI solutions grounded in thoughtful design and technical
       rigor.
     </p>
-    <p class="text-lg text-dusk/90 leading-relaxed">
+    <p class="text-md text-deep_navy/90 leading-relaxed">
       <strong>Research interests:</strong> Machine Learning, Deep Learning, Computer Vision, GIS, and Remote Sensing
     </p>
   </section>
 
   <section class="max-w-4xl mx-auto mt-16 px-4">
-    <h2 class="text-3xl font-semibold text-mystic mb-4 border-b border-dusk/20 pb-2">Get in touch</h2>
+    <h2 class="text-2xl font-semibold text-clay mb-4 border-b border-deep_navy/20 pb-2">Get in touch</h2>
 
-    <p class="text-lg text-dusk/90 leading-relaxed mb-6">Feel free to reach out at <a
-        href="mailto:anissarker603@gmail.com" class="text-mystic hover:underline">anissarker603@gmail.com</a> for
+    <p class="text-md text-deep_navy/90 leading-relaxed mb-6">Feel free to reach out at <a
+        href="mailto:anissarker603@gmail.com" class="text-link hover:underline">anissarker603@gmail.com</a> for
       collaborations, research discussions, or
       just to connect.
     </p>
     <div class="text-center">
-      <a class="text-dusk hover:text-dusk/80 hover:underline px-2 py-1" href="https://www.linkedin.com/in/iansarker/" target="_blank"><i class="linkedin icon"></i>LinkedIn</a> &#9826;
-      <a class="text-dusk hover:text-dusk/80 hover:underline px-2 py-1" href="https://github.com/ansarker" target="_blank"><i class="github icon"></i>Github</a> &#9826;
-      <a class="text-dusk hover:text-dusk/80 hover:underline px-2 py-1" href="https://scholar.google.com/citations?user=UePcz9EAAAAJ&hl=en"><i class="user graduate icon"></i>Google Scholar</a> &#9826;
-      <a class="text-dusk hover:text-dusk/80 hover:underline px-2 py-1" href="https://drive.google.com/file/d/1F_yXK1bgqK40SnEfpbUu8kJ3gi3G4vBR/view?usp=sharing" target="_blank"><i
+      <a class="text-link hover:text-link/80 hover:underline px-2 py-1" href="https://www.linkedin.com/in/iansarker/"
+        target="_blank"><i class="linkedin icon"></i>LinkedIn</a> &#9826;
+      <a class="text-link hover:text-link/80 hover:underline px-2 py-1" href="https://github.com/ansarker"
+        target="_blank"><i class="github icon"></i>Github</a> &#9826;
+      <a class="text-link hover:text-link/80 hover:underline px-2 py-1"
+        href="https://scholar.google.com/citations?user=UePcz9EAAAAJ&hl=en"><i class="user graduate icon"></i>Google
+        Scholar</a> &#9826;
+      <a class="text-link hover:text-link/80 hover:underline px-2 py-1"
+        href="https://drive.google.com/file/d/1F_yXK1bgqK40SnEfpbUu8kJ3gi3G4vBR/view?usp=sharing" target="_blank"><i
           class="file alternate icon"></i>CV</a>
     </div>
   </section>
 
   <section class="max-w-4xl mx-auto mt-16 px-4">
-    <h2 class="text-3xl font-semibold text-mystic mb-4 border-b border-dusk/20 pb-2">Projects involvement</h2>
+    <h2 class="text-2xl font-semibold text-clay mb-4 border-b border-deep_navy/20 pb-2">Projects involvement</h2>
 
     <div class="space-y-6">
-      <div class="border-l-4 border-mystic pl-4">
-        <h3 class="text-2xl text-mystic font-semibold">Odoo Copilot: Natural Language-Driven ERP Analytics</h3>
-        <p class="text-lg text-dusk/90 leading-relaxed">
+      <div class="border-l-4 border-clay pl-4">
+        <h3 class="text-xl text-clay font-semibold">Odoo Copilot: Natural Language-Driven ERP Analytics</h3>
+        <p class="text-md text-deep_navy/90 leading-relaxed">
           Contributed to the development of an AI assistant for ERP systems by designing a natural language interface
           for querying business data. Applied LLMs and internal orchestration frameworks to bridge user intent with ERP
           logic. Created custom data visualizations to improve data comprehension for stakeholders, boosting reporting
@@ -88,18 +102,18 @@
         </p>
       </div>
 
-      <div class="border-l-4 border-mystic pl-4">
-        <h3 class="text-2xl text-mystic font-semibold">DropDead Gorgeous: Virtual Makeup Room</h3>
-        <p class="text-lg text-dusk/90 leading-relaxed">
+      <div class="border-l-4 border-clay pl-4">
+        <h3 class="text-xl text-clay font-semibold">DropDead Gorgeous: Virtual Makeup Room</h3>
+        <p class="text-md text-deep_navy/90 leading-relaxed">
           Led the development of a real-time virtual makeup application using facial landmark detection and computer
           vision. Focused on applying dynamic effects like lipstick and blush with high visual fidelity, ensuring a
           fluid and interactive user experience.
         </p>
       </div>
 
-      <div class="border-l-4 border-mystic pl-4">
-        <h3 class="text-2xl text-mystic font-semibold">Virtual Try-On for Clothes</h3>
-        <p class="text-lg text-dusk/90 leading-relaxed">
+      <div class="border-l-4 border-clay pl-4">
+        <h3 class="text-xl text-clay font-semibold">Virtual Try-On for Clothes</h3>
+        <p class="text-md text-deep_navy/90 leading-relaxed">
           Engineered a virtual try-on system enabling users to visualize clothing on their body in real-time. Utilized
           pose estimation and body segmentation to align garments naturally with user movements and body shapes. Focused
           on ensuring accurate garment overlay, smooth transitions, and visual realism across diverse poses. Improved
@@ -108,9 +122,9 @@
       </div>
 
 
-      <div class="border-l-4 border-mystic pl-4">
-        <h3 class="text-2xl text-mystic font-semibold">Urban Categorization with Deep Learning</h3>
-        <p class="text-lg text-dusk/90 leading-relaxed">
+      <div class="border-l-4 border-clay pl-4">
+        <h3 class="text-xl text-clay font-semibold">Urban Categorization with Deep Learning</h3>
+        <p class="text-md text-deep_navy/90 leading-relaxed">
           Designed and trained semantic segmentation models for satellite imagery to classify urban land use in Dhaka.
           Managed data pipeline preparation, annotation, and preprocessing. Collaborated with international partners to
           ensure geographic and model generalizability.
@@ -120,52 +134,52 @@
   </section>
 
   <section id="publication" class="max-w-4xl mx-auto mt-16 px-4">
-    <h2 class="text-3xl font-semibold text-mystic mb-4 border-b border-dusk/20 pb-2">Publications</h2>
+    <h2 class="text-2xl font-semibold text-clay mb-4 border-b border-deep_navy/20 pb-2">Publications</h2>
 
     <div class="space-y-6">
-      <div class="border-l-4 border-mystic pl-4">
-        <p class="text-sm text-dusk/60">2024</p>
+      <div class="border-l-4 border-clay pl-4">
+        <p class="text-sm text-deep_navy/60">2024</p>
         <a href="https://doi.org/10.48550/arXiv.2406.05912"
-          class="text-xl font-medium hover:text-mystic transition">BD-SAT: High-resolution Land Use Land Cover
+          class="text-md font-medium hover:text-clay transition">BD-SAT: High-resolution Land Use Land Cover
           Dataset & Benchmark Results for Developing Division: Dhaka, BD</a>
       </div>
 
-      <div class="border-l-4 border-mystic pl-4">
-        <p class="text-sm text-dusk/60">2021</p>
-        <a href="https://doi.org/10.3390/s21227469" class="text-xl font-medium hover:text-mystic transition">Applying
+      <div class="border-l-4 border-clay pl-4">
+        <p class="text-sm text-deep_navy/60">2021</p>
+        <a href="https://doi.org/10.3390/s21227469" class="text-md font-medium hover:text-clay transition">Applying
           State-of-the-Art Deep-Learning Methods to
           Classify Urban Cities of the Developing World</a>
       </div>
 
-      <div class="border-l-4 border-mystic pl-4">
-        <p class="text-sm text-dusk/60">2021</p>
-        <a href="https://doi.org/10.48550/arXiv.2011.12847" class="text-xl font-medium hover:text-mystic transition">A
+      <div class="border-l-4 border-clay pl-4">
+        <p class="text-sm text-deep_navy/60">2021</p>
+        <a href="https://doi.org/10.48550/arXiv.2011.12847" class="text-md font-medium hover:text-clay transition">A
           Novel Disaster Image Dataset and Characteristics Analysis using Attention Model</a>
       </div>
 
-      <div class="border-l-4 border-mystic pl-4">
-        <p class="text-sm text-dusk/60">2021</p>
+      <div class="border-l-4 border-clay pl-4">
+        <p class="text-sm text-deep_navy/60">2021</p>
         <a href="https://doi.org/10.48550/arXiv.2107.01284"
-          class="text-xl font-medium hover:text-mystic transition">Deep-learning Coupled with Novel Classification
+          class="text-md font-medium hover:text-clay transition">Deep-learning Coupled with Novel Classification
           Method to Classify the Urban Environment of the Developing World</a>
       </div>
 
-      <div class="border-l-4 border-mystic pl-4">
-        <p class="text-sm text-dusk/60">2020</p>
+      <div class="border-l-4 border-clay pl-4">
+        <p class="text-sm text-deep_navy/60">2020</p>
         <a href="https://doi.org/10.48550/arXiv.2008.10736"
-          class="text-xl font-medium hover:text-mystic transition">LULC Segmentation of RGB Satellite Image Using
+          class="text-md font-medium hover:text-clay transition">LULC Segmentation of RGB Satellite Image Using
           FCN-8</a>
       </div>
     </div>
 
     <div class="mt-8 text-right">
       <a href="https://scholar.google.com/citations?user=UePcz9EAAAAJ&hl=en"
-        class="text-mystic hover:underline text-lg">→ See all publications</a>
+        class="text-clay hover:underline text-md">→ See all publications</a>
     </div>
   </section>
 
   <!-- Footer -->
-  <footer class="text-center text-sm text-dusk/60 pb-8 mt-6">
+  <footer class="text-center text-sm text-deep_navy/60 pb-8 mt-6">
     Copyright &copy; 2019-2025 Anis Sarker.
   </footer>
 
