@@ -13,13 +13,20 @@
         extend: {
           colors: {
             light_gray: '#fdfdfd',
-            deep_navy: '#14213d',
-            clay: '#cb997e',
-            link: '#0a2472'
+            deep_navy: '#000',
+            header: '#696969',
+            link: '#0076df'
           },
           fontFamily: {
             sufispirit: ['"Cormorant Garamond"', 'serif'],
-            noto: ['"Noto Serif"', 'serif']
+            noto: ['"Noto Serif"', 'serif'],
+            roboto: ['"Roboto"', 'sans-serif']
+          },
+          fontSize: {
+            norm: '16px'
+          },
+          fontWeight: {
+            teddy: '300'
           }
         }
       }
@@ -30,162 +37,298 @@
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap"
     rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
 </head>
 
-<body class="bg-light_gray text-deep_navy font-noto">
+<body class="bg-light_gray text-deep_navy font-roboto font-teddy tracking-wide">
 
-  <!-- Top centered nav -->
   <header class="py-6">
-    <nav class="flex justify-center space-x-6 text-md">
-      <a href="/" class="hover:text-clay transition flex items-center space-x-1">
+    <nav class="flex justify-center space-x-6 text-norm">
+      <a href="/" class="hover:text-link transition flex items-center space-x-1">
         <img src="assets/svg/banyan_rev.svg" alt="Home icon" class="w-5 h-5 bg-deep_navy" />
-        <span>Home</span>
+        <span class="font-semibold">about</span>
       </a>
-      <a href="#publication" class="hover:text-clay transition">Publications</a>
-      <a href="https://drive.google.com/file/d/1F_yXK1bgqK40SnEfpbUu8kJ3gi3G4vBR/view?usp=sharing">CV</a>
+      <a href="#publication" class="hover:text-link transition">publications</a>
     </nav>
   </header>
 
-  <section class="max-w-4xl mx-auto mt-16 px-4">
-    <div class="mx-auto w-40 h-auto mb-4 rounded overflow-hidden shadow-md">
-      <img class="w-full h-full" alt="portrait 2020" src="assets/portrait/portrait_2020.jpg" />
-    </div>
-    <h2 class="text-4xl font-bold text-deep_navy mb-4 pb-2">Anis Sarker</h2>
+  <section class="w-full max-w-3xl mx-auto mt-16 px-4 sm:px-4 md:px-6 lg:px-8">
+    <h2 class="text-5xl text-deep_navy mb-4 pb-2">
+      <strong>Anis</strong> Sarker
+    </h2>
 
-    <p class="text-md text-deep_navy/90 leading-relaxed mb-6">
-      I am a machine learning engineer and applied AI researcher with hands-on experience building end-to-end systems
-      across computer vision, deep learning, and geospatial intelligence.
+    <figure class="mb-4 sm:mb-0 w-56 mx-auto sm:float-right sm:ml-6 sm:w-48 lg:w-56 rounded overflow-hidden shadow-md">
+      <picture>
+        <source srcset="./assets/portrait/portrait_2024.jpg" type="image/jpeg">
+        <img src="./assets/portrait/portrait_2024.jpg" alt="Portrait of Anis Sarker (2024)" class="w-full h-auto block"
+          loading="lazy">
+      </picture>
+      <figcaption class="sr-only">Portrait of Anis Sarker</figcaption>
+    </figure>
+
+    <p class="text-norm text-deep_navy/90 leading-relaxed mb-6">
+      I am a machine learning engineer and applied AI researcher with hands-on experience building end-to-end
+      systems across computer vision, deep learning, and geospatial intelligence.
       My work spans a range of real-world projects, including virtual try-on systems for fashion and cosmetics,
-      AI-driven ERP assistants, and urban land use classification using satellite imagery. I specialize in deep
-      learning, MLOps, and human-centric applications of computer vision. With a strong foundation in both research and
-      engineering, I focus on creating scalable, impactful AI solutions grounded in thoughtful design and technical
-      rigor.
+      AI-driven ERP assistants.
     </p>
-    <p class="text-md text-deep_navy/90 leading-relaxed">
+
+    <p class="text-norm text-deep_navy/90 leading-relaxed mb-6">
+      Priorly, I worked as a research assistant at the <a href="https://ccds.ai" class="text-link"
+        target="_blank">Center for Computational and Data Sciences</a> lab, focusing on GeoAI projects <span
+        class="italic">land use/land cover</span>, and <span class="italic">building categorization</span>.
+    </p>
+
+    <p class="text-norm text-deep_navy/90 leading-relaxed mb-6">
+      You can find a copy of my CV <a
+        href="https://drive.google.com/file/d/1F_yXK1bgqK40SnEfpbUu8kJ3gi3G4vBR/view?usp=sharing" class="text-link"
+        target="_blank">here</a>
+    </p>
+
+    <p class="text-norm text-deep_navy/90 leading-relaxed mb-6">
+      Email: <a href="mailto:anissarker603@gmail.com" class="underline hover:text-deep_navy">anissarker603@gmail.com</a>
+    </p>
+
+    <p class="text-norm text-deep_navy/90 leading-relaxed">
       <strong>Research interests:</strong> Machine Learning, Deep Learning, Computer Vision, GIS, and Remote Sensing
     </p>
   </section>
 
-  <section class="max-w-4xl mx-auto mt-16 px-4">
-    <h2 class="text-2xl font-semibold text-clay mb-4 border-b border-deep_navy/20 pb-2">Get in touch</h2>
+  <section class="w-full max-w-3xl mx-auto mt-16 px-4 sm:px-4 md:px-6 lg:px-8">
+    <h2 class="text-2xl text-header mb-4 border-b border-deep_navy/20 pb-2">education</h2>
 
-    <p class="text-md text-deep_navy/90 leading-relaxed mb-6">Feel free to reach out at <a
-        href="mailto:anissarker603@gmail.com" class="text-link hover:underline">anissarker603@gmail.com</a> for
-      collaborations, research discussions, or
-      just to connect.
-    </p>
-    <div class="text-center">
-      <a class="text-link hover:text-link/80 hover:underline px-2 py-1" href="https://www.linkedin.com/in/iansarker/"
-        target="_blank"><i class="linkedin icon"></i>LinkedIn</a> &#9826;
-      <a class="text-link hover:text-link/80 hover:underline px-2 py-1" href="https://github.com/ansarker"
-        target="_blank"><i class="github icon"></i>Github</a> &#9826;
-      <a class="text-link hover:text-link/80 hover:underline px-2 py-1"
-        href="https://scholar.google.com/citations?user=UePcz9EAAAAJ&hl=en"><i class="user graduate icon"></i>Google
-        Scholar</a> &#9826;
-      <a class="text-link hover:text-link/80 hover:underline px-2 py-1"
-        href="https://drive.google.com/file/d/1F_yXK1bgqK40SnEfpbUu8kJ3gi3G4vBR/view?usp=sharing" target="_blank"><i
-          class="file alternate icon"></i>CV</a>
-    </div>
-  </section>
-
-  <section class="max-w-4xl mx-auto mt-16 px-4">
-    <h2 class="text-2xl font-semibold text-clay mb-4 border-b border-deep_navy/20 pb-2">Projects involvement</h2>
-
-    <div class="space-y-6">
-      <div class="border-l-4 border-clay pl-4">
-        <h3 class="text-xl text-clay font-semibold">Odoo Copilot: Natural Language-Driven ERP Analytics</h3>
-        <p class="text-md text-deep_navy/90 leading-relaxed">
-          Contributed to the development of an AI assistant for ERP systems by designing a natural language interface
-          for querying business data. Applied LLMs and internal orchestration frameworks to bridge user intent with ERP
-          logic. Created custom data visualizations to improve data comprehension for stakeholders, boosting reporting
-          efficiency.
-        </p>
-      </div>
-
-      <div class="border-l-4 border-clay pl-4">
-        <h3 class="text-xl text-clay font-semibold">DropDead Gorgeous: Virtual Makeup Room</h3>
-        <p class="text-md text-deep_navy/90 leading-relaxed">
-          Led the development of a real-time virtual makeup application using facial landmark detection and computer
-          vision. Focused on applying dynamic effects like lipstick and blush with high visual fidelity, ensuring a
-          fluid and interactive user experience.
-        </p>
-      </div>
-
-      <div class="border-l-4 border-clay pl-4">
-        <h3 class="text-xl text-clay font-semibold">Virtual Try-On for Clothes</h3>
-        <p class="text-md text-deep_navy/90 leading-relaxed">
-          Engineered a virtual try-on system enabling users to visualize clothing on their body in real-time. Utilized
-          pose estimation and body segmentation to align garments naturally with user movements and body shapes. Focused
-          on ensuring accurate garment overlay, smooth transitions, and visual realism across diverse poses. Improved
-          user engagement and interactivity through responsive and lightweight implementation.
-        </p>
-      </div>
-
-
-      <div class="border-l-4 border-clay pl-4">
-        <h3 class="text-xl text-clay font-semibold">Urban Categorization with Deep Learning</h3>
-        <p class="text-md text-deep_navy/90 leading-relaxed">
-          Designed and trained semantic segmentation models for satellite imagery to classify urban land use in Dhaka.
-          Managed data pipeline preparation, annotation, and preprocessing. Collaborated with international partners to
-          ensure geographic and model generalizability.
+    <div class="space-y-8">
+      <div>
+        <h3 class="text-lg font-normal text-deep_navy">B.Sc. in Computer Science</h3>
+        <p class="text-deep_navy">Independent University, Bangladesh</p>
+        <p class="text-deep_navy text-sm">Graduated: 2019</p>
+        <p class="text-deep_navy text-sm mt-2">
+          <strong>Thesis:</strong> Land Use and Land Cover Segmentation Using Deep Neural Network
+          <span><a class="border border-deep_navy hover:border-link hover:text-link px-2" target="_blank" href="https://drive.google.com/file/d/1pQjiSwmUaSRL8EwMSTxJoUimZxmRRH9m/view?usp=sharing">Thesis Report</a> </span>
         </p>
       </div>
     </div>
   </section>
 
-  <section id="publication" class="max-w-4xl mx-auto mt-16 px-4">
-    <h2 class="text-2xl font-semibold text-clay mb-4 border-b border-deep_navy/20 pb-2">Publications</h2>
+  <section id="publication" class="w-full max-w-3xl mx-auto mt-16 px-4 sm:px-4 md:px-6 lg:px-8">
+    <h2 class="text-2xl text-header mb-4 border-b border-deep_navy/20 pb-2">publications</h2>
 
-    <div class="space-y-6">
-      <div class="border-l-4 border-clay pl-4">
-        <p class="text-sm text-deep_navy/60">2025</p>
-        <a href="https://arxiv.org/pdf/2505.21915" class="text-md font-medium hover:text-clay transition">BD
-          Open LULC Map: High-resolution land use land cover mapping & benchmarking for urban development in Dhaka,
-          Bangladesh</a>
+    <div class="space-y-12">
+      <!-- <div class="flex flex-col sm:flex-row sm:items-start gap-4 mb-6">
+        <figure class="flex-shrink-0 w-full sm:w-32 rounded overflow-hidden shadow-md">
+          <img src="assets/svg/banyan_rev.svg" alt="BD Open LULC Map" class="w-full h-auto bg-black object-cover"
+            loading="lazy">
+          <figcaption class="sr-only">BD Open LULC Map</figcaption>
+        </figure>
+
+        <div class="flex-1">
+          <h3 class="text-norm font-medium leading-snug mb-1">
+            BD Open LULC Map: High-resolution land use land cover mapping & benchmarking for urban development in Dhaka,
+            Bangladesh
+          </h3>
+          <p class="text-sm text-deep_navy/80">
+            M.S. Hossain, R.H. Rajib, M.A.K. Iftee, O. Paul, A.B.S. Nayem, <span class="underline">A. Sarker</span>,
+            M.A. Amin, A.A. Ali and A.K.M.M.
+            Rahman
+          </p>
+          <p class="text-sm text-deep_navy/60 mb-1">
+            <span class="font-medium">IEEE International Conference on Image Processing, 2025</span>
+          </p>
+          <div class="text-sm">
+            <a href="https://arxiv.org/pdf/2505.21915" target="_blank" class="hover:text-link border border-black px-2"
+              rel="noopener noreferrer">Paper</a>
+          </div>
+        </div>
+      </div> -->
+
+      <div class="flex flex-col sm:flex-row sm:items-start gap-4 mb-6">
+        <figure class="flex-shrink-0 w-full sm:w-32 aspect-square rounded overflow-hidden shadow-md">
+          <picture>
+            <source srcset="./assets/research/bd_open_lulc.webp" type="image/webp">
+            <source srcset="./assets/research/bd_open_lulc.png" type="image/jpeg">
+            <img src="./assets/research/bd_open_lulc.png" alt="BD Open LULC Map"
+              class="w-full h-full object-cover object-center block transition-transform duration-300 hover:scale-110"
+              loading="lazy">
+          </picture>
+          <figcaption class="sr-only">BD Open LULC Map</figcaption>
+        </figure>
+
+        <div class="flex-1">
+          <h3 class="text-norm font-medium leading-snug mb-1">
+            BD Open LULC Map: High-resolution land use land cover mapping & benchmarking for urban development in Dhaka,
+            Bangladesh
+          </h3>
+          <p class="text-sm text-deep_navy/80">
+            M.S. Hossain, R.H. Rajib, M.A.K. Iftee, O. Paul, A.B.S. Nayem, <span class="underline">A. Sarker</span>,
+            M.A. Amin, A.A. Ali and A.K.M.M.
+            Rahman
+          </p>
+          <p class="text-sm text-deep_navy/60 mb-1">
+            <span class="font-medium">IEEE International Conference on Image Processing, 2025</span>
+          </p>
+          <div class="text-sm">
+            <a href="https://arxiv.org/pdf/2505.21915" target="_blank" class="hover:text-link border border-black px-2"
+              rel="noopener noreferrer">Paper</a>
+          </div>
+        </div>
       </div>
 
-      <div class="space-y-6">
-        <div class="border-l-4 border-clay pl-4">
-          <p class="text-sm text-deep_navy/60">2024</p>
-          <a href="https://doi.org/10.48550/arXiv.2406.05912"
-            class="text-md font-medium hover:text-clay transition">BD-SAT: High-resolution Land Use Land Cover
-            Dataset & Benchmark Results for Developing Division: Dhaka, BD</a>
-        </div>
+      <div class="flex flex-col sm:flex-row sm:items-start gap-4 mb-6">
+        <figure class="flex-shrink-0 w-full sm:w-32 aspect-square rounded overflow-hidden shadow-md">
+          <picture>
+            <source srcset="./assets/research/urban_cities.webp" type="image/webp">
+            <source srcset="./assets/research/urban_cities.png" type="image/jpeg">
+            <img src="./assets/research/urban_cities.png" alt="Classify Urban Cities of the Developing World"
+              class="w-full h-full object-cover object-center block transition-transform duration-300 hover:scale-110"
+              loading="lazy">
+          </picture>
+          <figcaption class="sr-only">Classify Urban Cities of the Developing World</figcaption>
+        </figure>
 
-        <div class="border-l-4 border-clay pl-4">
-          <p class="text-sm text-deep_navy/60">2021</p>
-          <a href="https://doi.org/10.3390/s21227469" class="text-md font-medium hover:text-clay transition">Applying
-            State-of-the-Art Deep-Learning Methods to
-            Classify Urban Cities of the Developing World</a>
-        </div>
 
-        <div class="border-l-4 border-clay pl-4">
-          <p class="text-sm text-deep_navy/60">2021</p>
-          <a href="https://ieeexplore.ieee.org/document/9412504" class="text-md font-medium hover:text-clay transition">A
-            Novel Disaster Image Dataset and Characteristics Analysis using Attention Model</a>
-        </div>
-
-        <div class="border-l-4 border-clay pl-4">
-          <p class="text-sm text-deep_navy/60">2021</p>
-          <a href="https://arxiv.org/abs/2011.12847"
-            class="text-md font-medium hover:text-clay transition">Deep-learning Coupled with Novel Classification
-            Method to Classify the Urban Environment of the Developing World</a>
-        </div>
-
-        <div class="border-l-4 border-clay pl-4">
-          <p class="text-sm text-deep_navy/60">2020</p>
-          <a href="https://doi.org/10.48550/arXiv.2008.10736"
-            class="text-md font-medium hover:text-clay transition">LULC
-            Segmentation of RGB Satellite Image Using
-            FCN-8</a>
+        <div class="flex-1">
+          <h3 class="text-norm font-medium leading-snug mb-1">
+            Applying State-of-the-Art Deep-Learning Methods to Classify Urban Cities of the Developing World
+          </h3>
+          <p class="text-sm text-deep_navy/80">
+            A.K.M.M. Rahman, M. Zaber, Q. Cheng, A.B.S. Nayem, <span class="underline">A. Sarker</span>, O. Paul, R.
+            Shibasaki
+          </p>
+          <p class="text-sm text-deep_navy/60 mb-1">
+            <span class="font-medium">Sensors, 2021</span>
+          </p>
+          <div class="text-sm">
+            <a href="https://doi.org/10.3390/s21227469" target="_blank" class="hover:text-link border border-black px-2"
+              rel="noopener noreferrer">HTML</a>
+          </div>
         </div>
       </div>
 
-      <div class="mt-8 text-right">
-        <a href="https://scholar.google.com/citations?user=UePcz9EAAAAJ&hl=en"
-          class="text-clay hover:underline text-md">→
-          See all publications</a>
+      <div class="flex flex-col sm:flex-row sm:items-start gap-4 mb-6">
+        <figure class="flex-shrink-0 w-full sm:w-32 aspect-square rounded overflow-hidden shadow-md">
+          <picture>
+            <source srcset="./assets/research/disaster.webp" type="image/webp">
+            <source srcset="./assets/research/disaster.png" type="image/jpeg">
+            <img src="./assets/research/disaster.png" alt="Novel Disaster Image Dataset"
+              class="w-full h-full object-cover object-center block transition-transform duration-300 hover:scale-110"
+              loading="lazy">
+          </picture>
+          <figcaption class="sr-only">Novel Disaster Image Dataset</figcaption>
+        </figure>
+
+        <div class="flex-1">
+          <h3 class="text-norm font-medium leading-snug mb-1">
+            A Novel Disaster Image Dataset and Characteristics Analysis using Attention Model
+          </h3>
+          <p class="text-sm text-deep_navy/80">
+            F.F. Niloy; Arif; A.B.S. Nayem; <span class="underline">A. Sarker</span>, O. Paul; M.A. Amin, A.A. Ali, M.I.
+            Zaber, and A.K.M.M. Rahman
+          </p>
+          <p class="text-sm text-deep_navy/60 mb-1">
+            <span class="font-medium"> 25th International Conference on Pattern Recognition (ICPR), 2020</span>
+          </p>
+          <div class="text-sm">
+            <a href="https://arxiv.org/abs/2107.01284" target="_blank"
+              class="hover:text-link border border-black px-2" rel="noopener noreferrer">Paper</a>
+            
+            <a href="https://ieeexplore.ieee.org/document/9412504" target="_blank"
+              class="hover:text-link border border-black px-2" rel="noopener noreferrer">HTML</a>
+          </div>
+        </div>
       </div>
+
+      <div class="flex flex-col sm:flex-row sm:items-start gap-4 mb-6">
+        <figure class="flex-shrink-0 w-full sm:w-32 aspect-square rounded overflow-hidden shadow-md">
+          <picture>
+            <source srcset="./assets/research/deep_learning_coupled.webp" type="image/webp">
+            <source srcset="./assets/research/deep_learning_coupled.png" type="image/jpeg">
+            <img src="./assets/research/deep_learning_coupled.png" alt="Deep-learning Coupled"
+              class="w-full h-full object-cover object-center block transition-transform duration-300 hover:scale-110"
+              loading="lazy">
+          </picture>
+          <figcaption class="sr-only">Deep-learning Coupled</figcaption>
+        </figure>
+
+        <div class="flex-1">
+          <h3 class="text-norm font-medium leading-snug mb-1">
+            Deep-learning Coupled with Novel Classification Method to Classify the Urban Environment of the Developing
+            World
+          </h3>
+          <p class="text-sm text-deep_navy/80">
+            Q. Cheng, A.K.M.M. Rahman, <span class="underline">A. Sarker</span>, A.B.S. Nayem, O. Paul, A.A. Ali, MA.
+            Amin, R. Shibasaki, M. Zaber
+          </p>
+          <p class="text-sm text-deep_navy/60 mb-1">
+            <span class="font-medium">SIGML, 2020</span>
+          </p>
+          <div class="text-sm">
+            <a href="https://arxiv.org/abs/2011.12847" target="_blank" class="hover:text-link border border-black px-2"
+              rel="noopener noreferrer">Paper</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="flex flex-col sm:flex-row sm:items-start gap-4 mb-6">
+        <figure class="flex-shrink-0 w-full sm:w-32 aspect-square rounded overflow-hidden shadow-md">
+          <picture>
+            <source srcset="./assets/research/lulc.webp" type="image/webp">
+            <source srcset="./assets/research/lulc.png" type="image/jpeg">
+            <img src="./assets/research/lulc.png" alt="LULC Segmentation"
+              class="w-full h-full object-cover object-center block transition-transform duration-300 hover:scale-110"
+              loading="lazy">
+          </picture>
+          <figcaption class="sr-only">LULC Segmentation</figcaption>
+        </figure>
+
+        <div class="flex-1">
+          <h3 class="text-norm font-medium leading-snug mb-1">
+            LULC Segmentation of RGB Satellite Image Using FCN-8
+          </h3>
+          <p class="text-sm text-deep_navy/80">
+            A.B.S. Nayem, <span class="underline">A. Sarker</span>, O. Paul, A.A. Ali, M.A. Amin, and A.K.M.M. Rahman
+          </p>
+          <p class="text-sm text-deep_navy/60 mb-1">
+            <span class="font-medium">SLAAI, 2020</span>
+          </p>
+          <div class="text-sm">
+            <a href="https://doi.org/10.48550/arXiv.2008.10736" target="_blank"
+              class="hover:text-link border border-black px-2" rel="noopener noreferrer">Paper</a>
+            <a href="https://slaai.lk/wp-content/uploads/2021/03/2019-Proceedings/LULC-Segmentation-of-RGB-Satellite-Image-Using-FCN-8.pdf" target="_blank" class="hover:text-link border border-black px-2"
+              rel="noopener noreferrer">HTML</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="mt-8 text-right">
+      <a href="https://scholar.google.com/citations?user=UePcz9EAAAAJ&hl=en"
+        class="text-header hover:underline text-link">→
+        See all publications</a>
+    </div>
+  </section>
+
+  <section class="max-w-3xl mx-auto mt-16 px-4">
+    <h2 class="text-2xl text-header mb-4 border-b border-deep_navy/20 pb-2">get in touch</h2>
+
+    <div class="text-center flex items-center justify-center">
+      <a class="text-header flex flex-col items-center hover:text-header/80 hover:underline px-2 py-1"
+        href="https://www.linkedin.com/in/iansarker/" target="_blank">
+        <img src="./assets/icons/linkedin-logo.png" class="w-16" />
+      </a>
+      <a class="text-header flex flex-col items-center hover:text-header/80 hover:underline px-2 py-1"
+        href="https://github.com/ansarker" target="_blank">
+        <img src="./assets/icons/github-logo.png" class="w-16" />
+      </a>
+      <a class="text-header hover:text-header/80 hover:underline px-2 py-1"
+        href="https://scholar.google.com/citations?user=UePcz9EAAAAJ&hl=en">
+        <img src="./assets/icons/school-logo.png" class="w-16" />
+      </a>
+      <a class="text-header hover:text-header/80 hover:underline px-2 py-1"
+        href="https://drive.google.com/file/d/1F_yXK1bgqK40SnEfpbUu8kJ3gi3G4vBR/view?usp=sharing" target="_blank">
+        <img src="./assets/icons/resume-logo.png" class="w-16" />
+      </a>
+    </div>
   </section>
 
   <!-- Footer -->
