@@ -1,0 +1,70 @@
+[
+  {
+    "id": 6,
+    "title": "BOLM high resolution land use and land cover dataset and benchmark results for the rapidly developing City of Dhaka Bangladesh",
+    "authors": "Ovi Paul, Abu Bakar Siddik Nayem, Anis Sarker, Rakibul Hasan Rajib, Tahmid Hossain Jit, Armun Alam, M. Ashraful Amin, Amin Ahsan Ali, & AKM Mahbubur Rahman",
+    "journal": "Scientific Reports",
+    "publisher": "Nature",
+    "year": 2025,
+    "html": ["https://www.nature.com/articles/s41598-025-21458-9"],
+    "pdf": [],
+    "img": "bolm"
+  },
+  {
+    "id": 5,
+    "title": "BD Open LULC Map: High-resolution land use land cover mapping & benchmarking for urban development in Dhaka, Bangladesh",
+    "authors": "M.S. Hossain, R.H. Rajib, M.A.K. Iftee, O. Paul, A.B.S. Nayem, A. Sarker, M.A. Amin, A.A. Ali and A.K.M.M. Rahman",
+    "journal": "International Conference on Image Processing",
+    "publisher": "IEEE",
+    "year": 2025,
+    "html": [],
+    "pdf": ["https://arxiv.org/pdf/2505.21915"],
+    "img": "bd_open_lulc"
+  },
+  {
+    "id": 4,
+    "title": "Applying State-of-the-Art Deep-Learning Methods to Classify Urban Cities of the Developing World",
+    "authors": "A.K.M.M. Rahman, M. Zaber, Q. Cheng, A.B.S. Nayem, A. Sarker, O. Paul, R. Shibasaki",
+    "journal": "Sensors",
+    "publisher": "MDPI",
+    "year": 2021,
+    "html": ["https://doi.org/10.3390/s21227469"],
+    "pdf": [],
+    "img": "urban_cities"
+  },
+  {
+    "id": 3,
+    "title": "A Novel Disaster Image Dataset and Characteristics Analysis using Attention Model",
+    "authors": "F.F. Niloy; Arif; A.B.S. Nayem; A. Sarker, O. Paul; M.A. Amin, A.A. Ali, M.I. Zaber, and A.K.M.M. Rahman",
+    "journal": "International Conference on Pattern Recognition (ICPR)",
+    "publisher": "IEEE",
+    "year": 2020,
+    "html": ["https://ieeexplore.ieee.org/document/9412504"],
+    "pdf": ["https://arxiv.org/abs/2107.01284"],
+    "img": "disaster"
+  },
+  {
+    "id": 2,
+    "title": "Deep-learning Coupled with Novel Classification Method to Classify the Urban Environment of the Developing World",
+    "authors": "Q. Cheng, A.K.M.M. Rahman, A. Sarker, A.B.S. Nayem, O. Paul, A.A. Ali, MA. Amin, R. Shibasaki, M. Zaber",
+    "journal": "SIGML",
+    "publisher": "MDPI",
+    "year": 2020,
+    "html": [],
+    "pdf": ["https://arxiv.org/abs/2011.12847"],
+    "img": "deep_learning_coupled"
+  },
+  {
+    "id": 1,
+    "title": "LULC Segmentation of RGB Satellite Image Using FCN-8",
+    "authors": "A.B.S. Nayem, A. Sarker, O. Paul, A.A. Ali, M.A. Amin, and A.K.M.M. Rahman",
+    "journal": "SLAAI",
+    "publisher": "Springer",
+    "year": 2020,
+    "html": [
+      "https://slaai.lk/wp-content/uploads/2021/03/2019-Proceedings/LULC-Segmentation-of-RGB-Satellite-Image-Using-FCN-8.pdf"
+    ],
+    "pdf": ["https://doi.org/10.48550/arXiv.2008.10736"],
+    "img": "lulc"
+  }
+]
