@@ -18,19 +18,19 @@ jobs:
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: '22' # Best for Angular 21
+          node-version: '22'
           cache: 'npm'
 
       - name: Install Dependencies
         run: npm ci
 
       - name: Build Project
-        # Replace 'anis-web' below with your actual repo name for the base-href
-        run: npx ng build --configuration production --base-href /anis-web/
+        # Since your repo is ansarker.github.io, base-href must be /
+        run: npx ng build --configuration production --base-href /
 
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          # Path for Angular 21 is: dist/[project-name]/browser
+          # Path for Angular 21 (Check locally if anis-web folder exists in dist)
           publish_dir: ./dist/anis-web/browser

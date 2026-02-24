@@ -41,12 +41,9 @@ __screenshots__/
 # System files
 .DS_Store
 Thumbs.db
-<<<<<<< HEAD
 
 node_modules/
 dist/
 coverage/
 logs/
 *.log
-=======
->>>>>>> a54a349 (initial commit)
