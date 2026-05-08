@@ -6,10 +6,11 @@ import { About } from "./components/about/about";
 import { Education } from "./components/education/education";
 import { Publications } from "./components/publications/publications";
 import { Social } from "./components/social/social";
+import { Layout } from './shared/layout/layout';
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet, Header, Footer, About, Education, Publications, Social],
+  imports: [RouterOutlet, Layout, Header, Footer, About, Education, Publications, Social],
   templateUrl: './app.html',
   styleUrl: './app.css'
 })

@@ -1,8 +1,9 @@
 import { Component } from '@angular/core';
+import { Social } from "../../components/social/social";
 
 @Component({
   selector: 'app-footer',
-  imports: [],
+  imports: [Social],
   templateUrl: './footer.html',
 })
 export class Footer {
