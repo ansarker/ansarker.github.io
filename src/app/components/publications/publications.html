@@ -1,48 +1,67 @@
-<section class="w-full my-8 px-4 sm:px-4 md:px-6 lg:px-8" id="publication">
-  <h2 class="text-4xl vollkorn-font font-normal text-black mb-6">Publications</h2>
+<section class="app-gutter w-full py-10 sm:py-12" id="publication">
+  <h2 class="vollkorn-font mb-6 text-3xl font-normal text-black sm:text-4xl">Publications</h2>
 
-  <div class="vollkorn-font text-black text-base leading-relaxed tracking-wide">
-    @if(publications().length === 0) {
-    <div>
-      <p>No publications to show!</p>
-    </div>
-    } @for(publication of publications(); track publication.id) {
-    <div class="flex flex-col sm:flex-row sm:items-start gap-4 mb-6">
-      <figure class="w-full sm:w-32 aspect-square rounded overflow-hidden shadow-md">
-        <picture>
-          <source srcset="./assets/research/{{publication.img}}.webp" type="image/webp" />
-          <source srcset="./assets/research/{{publication.img}}.png" type="image/jpeg" />
-          <img src="./assets/research/{{ publication.img }}.png" alt="{{ publication.title }}"
-            class="w-full h-full object-cover object-center block transition-transform duration-300 hover:scale-110"
-            loading="lazy" />
-        </picture>
-        <figcaption class="sr-only">{{ publication.title }}</figcaption>
-      </figure>
+  <div class="vollkorn-font text-base leading-relaxed tracking-wide text-black">
+    @if (publications().length === 0) {
+      <p class="text-neutral-600">No publications to show!</p>
+    } @else {
+      <ol class="space-y-8">
+        @for (publication of publications(); track publication.id) {
+          <li class="flex flex-row items-start gap-4 sm:gap-5">
+            <figure
+              class="aspect-square w-20 shrink-0 overflow-hidden rounded bg-neutral-100 shadow-md sm:w-28 md:w-32"
+            >
+              <picture>
+                <source srcset="./assets/research/{{ publication.img }}.webp" type="image/webp" />
+                <source srcset="./assets/research/{{ publication.img }}.png" type="image/png" />
+                <img
+                  src="./assets/research/{{ publication.img }}.png"
+                  alt="Figure from “{{ publication.title }}”"
+                  class="block h-full w-full object-cover object-center transition-transform duration-300 hover:scale-110"
+                  loading="lazy"
+                  decoding="async"
+                />
+              </picture>
+              <figcaption class="sr-only">{{ publication.title }}</figcaption>
+            </figure>
 
-      <div class="flex-1">
-        <h3 class="text-base font-medium text-black leading-snug mb-1">
-          {{ publication.title }}
-        </h3>
-        <p class="text-sm text-black">
-          {{ publication.authors }}
-        </p>
-        <p class="text-sm">
-          <span class="font-medium text-lime-700">{{ publication.journal }}, {{ publication.publisher }}, {{
-            publication.year }}</span>
-        </p>
-        <div class="text-sm space-x-1.5">
-          @if (publication.pdf.length !== 0) {
-          <a href="{{ publication.pdf }}" target="_blank"
-            class="border border-lime-200 text-lime-600 hover:text-lime-700 bg-lime-50 px-2.5"
-            rel="noopener noreferrer">Paper</a>
-          } @if (publication.html.length !== 0){
-          <a href="{{ publication.html }}" target="_blank"
-            class="border border-blue-200 text-blue-600 hover:text-blue-700 bg-blue-50 px-2.5"
-            rel="noopener noreferrer">HTML</a>
-          }
-        </div>
-      </div>
-    </div>
+            <div class="min-w-0 flex-1">
+              <h3 class="mb-1 text-base font-medium leading-snug text-black">
+                {{ publication.title }}
+              </h3>
+              <p class="text-sm text-neutral-700">{{ publication.authors }}</p>
+              <p class="text-sm font-medium text-lime-700">
+                {{ publication.journal }}, {{ publication.publisher }}, {{ publication.year }}
+              </p>
+
+              @if (publication.pdf.length || publication.html.length) {
+                <div class="mt-2 flex flex-wrap gap-2 text-sm">
+                  @if (publication.pdf.length) {
+                    <a
+                      [href]="publication.pdf[0]"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      class="border border-lime-200 bg-lime-50 px-2.5 py-0.5 text-lime-600 transition-colors hover:bg-lime-100 hover:text-lime-700"
+                    >
+                      Paper
+                    </a>
+                  }
+                  @if (publication.html.length) {
+                    <a
+                      [href]="publication.html[0]"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      class="border border-blue-200 bg-blue-50 px-2.5 py-0.5 text-blue-600 transition-colors hover:bg-blue-100 hover:text-blue-700"
+                    >
+                      HTML
+                    </a>
+                  }
+                </div>
+              }
+            </div>
+          </li>
+        }
+      </ol>
     }
   </div>
 </section>

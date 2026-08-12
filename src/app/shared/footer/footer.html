@@ -1,20 +1,26 @@
-<footer class="bg-white border-t-2 border-gray-200 vollkorn-font">
-  <div class="max-w-4xl mx-auto px-8 py-8 md:px-16 md:py-8">
-    <div class="mb-4">
-      <a href="/" class="text-black text-xl font-normal">
-        Anis Sarker
-      </a>
-    </div>
-    <div class="flex items-baseline justify-between  space-y-1.5">
-      <div class="w-full text-base tracking-wide">
+<footer class="border-t border-gray-200 bg-white vollkorn-font sm:rounded-b-lg">
+  <div class="app-gutter py-8 sm:py-10">
+    <a href="/" class="text-lg font-normal text-black transition-colors hover:text-lime-700 sm:text-xl">
+      Anis Sarker
+    </a>
+
+    <div class="mt-5 grid gap-6 text-base tracking-wide sm:grid-cols-2 lg:grid-cols-3">
+      <div>
         <p class="font-medium text-neutral-600">Anis Sarker</p>
-        <p class="text-lime-800"><a href="mailto:anissarker603@gmail.com">anissarker603@gmail.com</a></p>
+        <p>
+          <a
+            class="text-lime-800 underline-offset-4 hover:text-lime-600 hover:underline"
+            href="mailto:anissarker603@gmail.com"
+          >
+            anissarker603&#64;gmail.com
+          </a>
+        </p>
       </div>
-      <div class="w-full">
-        <app-social></app-social>
-      </div>
-      <div class="w-full text-neutral-700">
-        <span class="bg-lime-100 px-2.5 py-1">A place to bind them all!</span>
+
+      <app-social></app-social>
+
+      <div class="text-neutral-700 sm:col-span-2 lg:col-span-1">
+        <span class="inline-block bg-lime-100 px-2.5 py-1">A place to bind them all!</span>
       </div>
     </div>
   </div>
